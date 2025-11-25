@@ -220,8 +220,8 @@ function HeroSection() {
               </span>
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Meet Medhya — Your 24/7 AI-powered medical assistant. Handle unlimited
-              patients, reduce doctor workload by 70%, and deliver exceptional care around
+              Meet Medhya — Your 24/7 AI-powered medical assistant built for Indian healthcare. Handle unlimited
+              patients across 22+ Indian languages, reduce doctor workload by 70%, and deliver exceptional care around
               the clock.
             </p>
           </div>
@@ -229,15 +229,15 @@ function HeroSection() {
           <div className="flex flex-wrap gap-6">
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-secondary" />
-              <span className="text-slate-300">500+ Clinics</span>
+              <span className="text-slate-300">500+ Indian Clinics</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-secondary" />
-              <span className="text-slate-300">50,000+ Patients</span>
+              <span className="text-slate-300">50,000+ Indian Patients</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-secondary" />
-              <span className="text-slate-300">99.9% Uptime</span>
+              <span className="text-slate-300">22+ Indian Languages</span>
             </div>
           </div>
 
@@ -272,7 +272,7 @@ function HeroSection() {
                   <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
                 ))}
               </div>
-              <p className="text-sm text-slate-400 mt-1">Rated 4.9/5 by 500+ doctors</p>
+              <p className="text-sm text-slate-400 mt-1">Rated 4.9/5 by 500+ Indian doctors</p>
             </div>
           </div>
         </div>
@@ -351,18 +351,28 @@ function HeroSection() {
 
 function MedhyaSection() {
   const languages = [
-    'English',
     'Hindi',
-    'Spanish',
-    'Mandarin',
-    'Arabic',
+    'English',
     'Bengali',
-    'Portuguese',
-    'Russian',
-    'French',
-    'German',
-    'Japanese',
-    'Korean',
+    'Telugu',
+    'Marathi',
+    'Tamil',
+    'Gujarati',
+    'Urdu',
+    'Kannada',
+    'Odia',
+    'Malayalam',
+    'Punjabi',
+    'Assamese',
+    'Maithili',
+    'Sanskrit',
+    'Konkani',
+    'Nepali',
+    'Sindhi',
+    'Dogri',
+    'Kashmiri',
+    'Bodo',
+    'Santali',
   ];
 
   const features = [
@@ -389,8 +399,8 @@ function MedhyaSection() {
   const whyDoctorsLove = [
     { icon: <Timer className="w-6 h-6" />, text: 'Saves 15+ Hours Weekly' },
     { icon: <Users className="w-6 h-6" />, text: 'Handles Unlimited Patients' },
-    { icon: <Shield className="w-6 h-6" />, text: 'HIPAA Compliant & Secure' },
-    { icon: <Target className="w-6 h-6" />, text: 'Reduces No-Shows by 40%' },
+    { icon: <Shield className="w-6 h-6" />, text: 'DISHA & IT Act Compliant' },
+    { icon: <Target className="w-6 h-6" />, text: 'Works in Tier 2 & 3 Cities' },
   ];
 
   return (
@@ -400,7 +410,7 @@ function MedhyaSection() {
           Meet Medhya — The Assistant Who Never Sleeps
         </h2>
         <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-          Your AI-powered medical assistant that works around the clock, so you don't have to
+          Your AI-powered medical assistant built for Indian healthcare. Works 24/7 in 22+ Indian languages, understands Indian medical conditions, and knows Indian healthcare protocols.
         </p>
       </div>
 
@@ -423,7 +433,7 @@ function MedhyaSection() {
 
       <div className="bg-slate-800/30 rounded-2xl p-8 border border-slate-700 overflow-hidden">
         <h3 className="text-2xl font-bold text-white mb-6 text-center">
-          Speaks 12+ Languages Fluently
+          Speaks 22+ Indian Languages Fluently
         </h3>
         <div className="flex gap-4 overflow-hidden">
           <div className="flex gap-4 animate-scroll whitespace-nowrap">
@@ -460,10 +470,10 @@ function MedhyaSection() {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-y border-slate-800">
-        <StatCard number="500+" label="Clinics" />
-        <StatCard number="50,000+" label="Patients" />
-        <StatCard number="99.9%" label="Uptime" />
-        <StatCard number="4.9★" label="Rating" />
+        <StatCard number="500+" label="Indian Clinics" />
+        <StatCard number="50,000+" label="Indian Patients" />
+        <StatCard number="22+" label="Indian Languages" />
+        <StatCard number="4.9★" label="Doctor Rating" />
       </div>
     </div>
   );
@@ -486,8 +496,8 @@ function BenefitsSection() {
       title: 'Save Time',
       description:
         'Automate routine tasks, patient intake, and appointment scheduling. Reclaim 15+ hours every week to focus on what matters — patient care.',
-      stat: '70% Reduction',
-      statLabel: 'in admin work',
+      stat: '15+ Hours',
+      statLabel: 'saved every week',
       image: 'https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=800&q=80',
       icon: <Timer className="w-12 h-12" />,
       color: 'from-blue-500 to-cyan-500',
@@ -495,8 +505,8 @@ function BenefitsSection() {
     {
       title: 'Save Money',
       description:
-        'Reduce staffing costs, eliminate no-shows, and increase patient throughput. MediBridge pays for itself in the first month.',
-      stat: '$5,000+',
+        'Reduce staffing costs, eliminate no-shows, and increase patient throughput. At just ₹5,999/month, MediBridge pays for itself in the first month — less than the cost of one receptionist.',
+      stat: '₹40,000+',
       statLabel: 'saved monthly',
       image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
       icon: <DollarSign className="w-12 h-12" />,
@@ -505,9 +515,9 @@ function BenefitsSection() {
     {
       title: 'Save Patient Health',
       description:
-        'AI-powered triage ensures critical cases are escalated immediately. Early intervention saves lives and improves outcomes.',
-      stat: '40% Faster',
-      statLabel: 'emergency response',
+        'AI-powered triage understands Indian symptoms and local medical conditions. Immediate escalation for critical cases ensures better outcomes, even in remote areas with limited doctor availability.',
+      stat: '24/7 Coverage',
+      statLabel: 'even in rural areas',
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
       icon: <Heart className="w-12 h-12" />,
       color: 'from-red-500 to-pink-500',
@@ -680,22 +690,20 @@ function OurStorySection() {
       <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-12 border border-slate-700 space-y-8">
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-slate-300 leading-relaxed">
-            It started with a simple observation: doctors were burning out, not because they
-            lacked skill or compassion, but because they were drowning in administrative work.
+            It started with a simple observation: Indian doctors were burning out, not because they
+            lacked skill or compassion, but because they were drowning in administrative work and language barriers.
           </p>
           <p className="text-slate-300 leading-relaxed">
-            Late-night phone calls. Missed patient inquiries. Hours spent on paperwork instead
-            of patient care. We knew there had to be a better way.
+            Late-night calls in multiple languages. Patients from rural areas struggling to communicate. Hours spent on paperwork instead
+            of patient care. We knew Indian healthcare needed a better solution.
           </p>
           <p className="text-slate-300 leading-relaxed">
-            So we built Medhya — not just another software tool, but a true AI assistant that
-            understands the nuances of healthcare. An assistant that never sleeps, never burns
-            out, and gets smarter with every interaction.
+            So we built Medhya — not just another software tool, but a true AI assistant built for India. An assistant that speaks 22+ Indian languages,
+            understands regional medical conditions, works in low-bandwidth areas, and never sleeps.
           </p>
           <p className="text-slate-300 leading-relaxed">
-            Today, MediBridge serves over 500 clinics and 50,000 patients. But we're just
-            getting started. Our mission is to give doctors back their time, so they can focus
-            on what they do best — healing people.
+            Today, MediBridge serves over 500 clinics across India — from metros to tier-3 cities — and 50,000 Indian patients. Our mission is to make quality healthcare accessible
+            to every Indian, regardless of language or location.
           </p>
         </div>
 
@@ -751,34 +759,34 @@ function TestimonialsSection() {
 
   const testimonials = [
     {
-      name: 'Dr. Sarah Chen',
-      role: 'Family Medicine, San Francisco',
+      name: 'Dr. Priya Sharma',
+      role: 'Family Physician, Delhi',
       quote:
-        "MediBridge has been a game-changer for my practice. I'm seeing 30% more patients without working longer hours. Medhya handles the routine inquiries, and I focus on complex cases.",
+        "MediBridge has transformed my practice. Medhya communicates with patients in Hindi, English, and Punjabi — I'm seeing 30% more patients without working longer hours. It handles routine inquiries while I focus on complex cases.",
       image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
       rating: 5,
     },
     {
       name: 'Dr. Rajesh Kumar',
-      role: 'Pediatrics, Mumbai',
+      role: 'Pediatrician, Mumbai',
       quote:
-        "The multilingual support is incredible. Our patients speak 6 different languages, and Medhya communicates fluently with all of them. It's like having a polyglot receptionist who never sleeps.",
+        "The multilingual support is incredible. Our patients speak Marathi, Hindi, Gujarati, and English. Medhya handles all of them fluently. It's like having a receptionist who speaks every Indian language and never takes a break.",
       image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
       rating: 5,
     },
     {
-      name: 'Dr. Emily Rodriguez',
-      role: 'Dermatology, Miami',
+      name: 'Dr. Anjali Reddy',
+      role: 'Dermatologist, Bangalore',
       quote:
-        'I was skeptical about AI in healthcare, but MediBridge proved me wrong. The triage accuracy is impressive, and my patients love the instant responses. My clinic revenue is up 45% this year.',
+        'I was skeptical about AI in Indian healthcare, but MediBridge proved me wrong. It understands Telugu and English perfectly, and even common skin conditions specific to Indian climate. My clinic revenue is up 45% this year at just ₹5,999/month.',
       image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
       rating: 5,
     },
     {
-      name: 'Dr. James Mitchell',
-      role: 'Internal Medicine, London',
+      name: 'Dr. Amit Patel',
+      role: 'General Physician, Ahmedabad',
       quote:
-        'The ROI was immediate. We eliminated two administrative positions and redirected that budget to patient care. The system paid for itself in 3 weeks. Best investment I have made in 20 years of practice.',
+        'The ROI was immediate. For ₹5,999/month, we saved ₹40,000 in staffing costs. It works perfectly even with our slower internet. The system paid for itself in 2 weeks. Best investment I have made in 25 years of practice in Gujarat.',
       image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
       rating: 5,
     },
@@ -848,8 +856,8 @@ function FinalCTA() {
         Ready to Transform Your Practice?
       </h2>
       <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-        Join 500+ clinics that are already using MediBridge to deliver exceptional patient care
-        while saving time and money.
+        Join 500+ Indian clinics across metros, tier-2, and tier-3 cities that are using MediBridge to deliver exceptional patient care
+        in 22+ Indian languages while saving time and money.
       </p>
       <div className="flex flex-wrap gap-6 justify-center">
         <button
@@ -897,7 +905,7 @@ function Footer() {
               <span className="text-xl font-bold text-white">MediBridge</span>
             </div>
             <p className="text-slate-400 text-sm">
-              Healthcare management platform powered by AI. Never miss a patient, never burn out.
+              Healthcare management platform powered by AI for Indian clinics. Works in 22+ Indian languages. Never miss a patient, never burn out.
             </p>
           </div>
 
@@ -966,7 +974,7 @@ function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
-          <p>&copy; 2025 MediBridge. All rights reserved. Built with care for healthcare professionals.</p>
+          <p>&copy; 2025 MediBridge. All rights reserved. Built in India, for Indian healthcare professionals. Compliant with DISHA Guidelines & IT Act 2000.</p>
         </div>
       </div>
     </footer>
