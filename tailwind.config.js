@@ -6,6 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/layouts/**/*.{js,ts,jsx,tsx}",
+    "./medibridge-extra/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
