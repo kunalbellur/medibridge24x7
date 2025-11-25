@@ -1,7 +1,7 @@
 import { useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { Login } from './pages';
+import { Landing, Login } from './pages';
 import { ProtectedRoute, ErrorBoundary, LoadingSpinner } from './components';
 import { useAuthStore } from './store/authStore';
 
@@ -63,6 +63,7 @@ function App() {
           }}
         />
       <Routes>
+        <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
 
         <Route
@@ -96,8 +97,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        <Route path="/" element={<Navigate to="/login" replace />} />
       </Routes>
       </BrowserRouter>
     </ErrorBoundary>
